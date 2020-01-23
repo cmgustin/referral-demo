@@ -4,7 +4,7 @@ $(document).ready(function() {
     var nameString = $('input[name="lastName"]').val();
     var nameSubString = nameString.substring(0, 2).toUpperCase();
     var timestamp = new Date().getTime();
-    var randNumber = Math.round(timestamp / 1000000);
+    var randNumber = Math.round(Math.random() * Math.random() * 10000000);
     var referralId = nameSubString + '-' + randNumber;
     $('#referralId').val(referralId);
 
